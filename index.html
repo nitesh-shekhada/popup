@@ -1,0 +1,65 @@
+<html dir="ltr" lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>popup</title>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+                        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="common/css/jquery-confirm.css"/>
+    <script type="text/javascript"
+            src="common/js/jquery-confirm.js"></script>
+                    </head>
+
+                    <body>
+                        <button type="button" data-toggle="tooltip" title="" class="btn btn-danger" 
+                        onclick="$.confirm({
+                                        title: 'Confirm!',
+                                        content: 'Are you sure?',
+                                        buttons: {
+                                            confirm: function(){
+                                                $.alert({
+                                                    title: 'Alert!',
+                                                    content: 'Alert on confirm!',
+                                                });
+                                            },
+                                            cancel: function(){
+                                                $.alert({
+                                                    title: 'Alert!',
+                                                    content: 'Alert on cancel!',
+                                                });
+                                            }
+                                        }
+                                    });
+                        " data-original-title="Delete">Delete</button>
+                        <br><br>
+                        <button type="button" data-toggle="tooltip" title="" class="btn btn-danger" 
+                        onclick="myalert()" data-original-title="alert">Alert</button>
+                        <div id="container">
+                            
+                                    <script type="text/javascript">
+									
+									
+									
+                            function myalert()
+                            {            
+                                                $.alert({
+                                                    title: 'Alert!',
+                                                    content: 'Alert button!',
+                                                });
+                                                
+                                            }           
+                                    </script>
+                            </div>
+
+                        
+
+
+
+                    </body>
+
+                    </html>
